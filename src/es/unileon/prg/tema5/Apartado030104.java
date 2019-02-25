@@ -50,8 +50,8 @@ package es.unileon.prg.tema5;
          varLong   = varInt;
          varLong   = 9223372036854775807L;
          varFloat  = varLong;
-         varByte   = varShort;
-         varShort  = varInt;
+         //varByte   = varShort; Como el short es mayor que el Byte no se puede realizar la conversion
+         //varShort  = varInt; Como el int es mayor que el short no se puede realizar la conversion
       
       }
    
@@ -130,7 +130,7 @@ package es.unileon.prg.tema5;
          System.out.println("Short : " + s);    
          System.out.println("Int   : " + i);
       
-         float f = 1.3e22;   
-         System.out.println("f: " + f);    
+         double d = 1.3e22;   
+         System.out.println("Double: " + d);    
       }
    }

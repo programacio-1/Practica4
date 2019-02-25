@@ -52,7 +52,7 @@ public class Apartado030102 extends Apartado {
 		int edad;
 		int numeroPartes;
 		boolean deportivo;
-		boolean rebaja;
+		boolean rebaja=true;
 		// rebaja = expresion booleana
 		System.out.println("Rebaja = " + rebaja);
 		// Fin modificacion
@@ -72,6 +72,9 @@ public class Apartado030102 extends Apartado {
 		int segundos, horas, minutos;
 		int totalSegundos=56000;
 		// Realizacion de calculos
+		segundos = totalSegundos;		
+		minutos = segundos/60;
+		horas = minutos/60;
 		System.out.println(horas+"h "+minutos+"m "+segundos+"s ");
 		// Fin modificacion
 	}
