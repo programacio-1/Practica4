@@ -29,6 +29,9 @@ public class Apartado030103 extends Apartado {
 		cabecera("01", "Calcular la raiz cuadrada de un numero");
 
 		// Inicio modificacion
+		double Raiz;
+		Raiz = Math.sqrt(256);
+		System.out.println("La raiz cuadrada de 256 es: " + Raiz);
 		// Fin modificacion
 	}
 
@@ -45,6 +48,9 @@ public class Apartado030103 extends Apartado {
 		cabecera("02", "Calcular potencias");
 
 		// Inicio modificacion
+		double Pow;
+		Pow = Math.pow(9,3);
+		System.out.println("El cubo de 9 es: " + Pow);
 		// Fin modificacion
 	}
 
@@ -60,6 +66,9 @@ public class Apartado030103 extends Apartado {
 		cabecera("03", "Generar numeros aleatorios");
 
 		// Inicio modificacion
+		double varRandom;
+		varRandom = Math.floor(Math.random()*(10-5+1)+5);
+		System.out.println("Numero aleatorio entre 5 y 10: " + varRandom);
 		// Fin modificacion
 	}
 
@@ -75,6 +84,9 @@ public class Apartado030103 extends Apartado {
 		cabecera("04", "Calcular la superficie de un circulo");
 
 		// Inicio modificacion
+		double varArea;
+		varArea = Math.PI * Math.pow(10,2);
+		System.out.println("El area de un circulo de 10 unidades de radio es: " + varArea);
 		// Fin modificacion
 	}
 }
