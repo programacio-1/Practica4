@@ -2,8 +2,14 @@ Practica P-VAR
 
 Alumno: Sergio Casado Fernandez
 
-Horas dedicadas: 3h 30min
+Horas dedicadas: 5h
 
 Problemas surgidos al realizar la practica:
 
 Respuestas a la preguntas:
+
+Apartado 030101 ejercicio 04.
+	El double es un tipo de dato de punto flotate y por tanto no puede almacenar un numero decimal exacto de forma que 2.8 - 1.5 = 1.2999999999998
+
+Apartado 030101 ejercicio 05.
+	El BigDecimal sin embargo si puede almacenar un numero decimal exacto de forma que 2.8 - 1.5 = 1.3

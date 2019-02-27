@@ -32,6 +32,12 @@ package es.unileon.prg.tema5;
          cabecera("01","");
          String cadena = "En un lugar de la Mancha";
         // Inicio modificacion
+	System.out.println("La cadena es: " + cadena);
+	System.out.println("El tamaño de la cadena es: " + cadena.length() + " caracteres");
+	System.out.println("El caracter en la posicion media es: " + cadena.charAt (cadena.length()/2));
+	char caracter = cadena.charAt (cadena.length()/2);
+	int ascii = (int) caracter;
+	System.out.println("El caracter es en codigo ascii es: " + ascii);
         // Fin modificacion
       }
    
@@ -50,6 +56,13 @@ package es.unileon.prg.tema5;
          String cadena = "Viaje al Parnaso";
          String otraCadena = "ViAje al pArnaso";
       // Inicio modificacion
+	System.out.println("La primera cadena es: " + cadena);
+	System.out.println("La segunda cadena es: "+ otraCadena);
+	System.out.println("La diferencia entre la primera cadena y la segunda es: " + cadena.compareTo(otraCadena));
+	System.out.println("La diferencia entre las dos cadenas sin tener en cuenta las mayusculas es: " + cadena.compareToIgnoreCase(otraCadena));
+	cadena = cadena.toLowerCase();
+	otraCadena = otraCadena.toLowerCase();	
+	System.out.println("La diferencia entre las dos cadenas en minusculas es :" + cadena.compareTo(otraCadena));
       // Fin modificacion
       }
    
@@ -58,17 +71,23 @@ package es.unileon.prg.tema5;
     *
     * </br>
     * Se pide anyadir el codigo necesario para realizar las siguientes tareas:
-    *	Concatenar las dos cadenas formando una tercera usando el operador +
+    *	Concatenar las dos cadenas formando una tercera usando el operador 
     * Concatenar las dos cadenas formando una tercera usando el metodo concat
     * Mostrar los resultados por pantalla.
     */
        public void ejercicio03() {
          cabecera("03", "");
       
-         String cadena = "Viaje al Parnaso";
+         String cadena = "Viaje al Parnaso ";
          String otraCadena = "Persiles y Segismunda";
       // Inicio modificacion
-        // Fin modificacion
+	String concat1 = cadena + otraCadena;
+	String concat2 = cadena.concat(otraCadena);
+	//concatenacion con +
+	System.out.println(concat1);
+	//concatenacion con metodo concat
+	System.out.println(concat2);
+      // Fin modificacion
       }
    
    /**
@@ -166,7 +185,7 @@ package es.unileon.prg.tema5;
          boolean expresion = true;
          long enteroGrande = 1231231L;
       // Inicio modificacion
-        // Fin modificacion
+      // Fin modificacion
       }
    
    /**
