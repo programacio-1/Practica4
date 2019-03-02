@@ -2,7 +2,7 @@ Practica P-VAR
 
 Alumno: Sergio Casado Fernandez
 
-Horas dedicadas: 5h
+Horas dedicadas: 5h 30 min
 
 Problemas surgidos al realizar la practica:
 
@@ -13,3 +13,12 @@ Apartado 030101 ejercicio 04.
 
 Apartado 030101 ejercicio 05.
 	El BigDecimal sin embargo si puede almacenar un numero decimal exacto de forma que 2.8 - 1.5 = 1.3
+
+Apartado 030104 ejercicio 04.
+	Gigante muestra infinity porque el numero es muy grande, del orden de 10 a la 289.
+	Normal muestra el numero sin variaciones.
+	Minimo muestra 0 pues el numero es muy pequeño, del orden de 10 a la -256.
+	Byte no muestra el 130 porque el numero ocupa mas bits de los que Byte puede almacenar.
+	Short no muestra el 32770 porque se sale del rango de valores que puede almacenar un Short.
+	Int no muestra el 2147483650 porque se sale del rango de valores que puee almacenar un Short.
+	Double muestra el numero sin variaciones.

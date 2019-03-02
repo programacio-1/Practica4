@@ -77,7 +77,7 @@ package es.unileon.prg.tema5;
     */
        public void ejercicio03() {
          cabecera("03", "");
-      
+
          String cadena = "Viaje al Parnaso ";
          String otraCadena = "Persiles y Segismunda";
       // Inicio modificacion
@@ -104,6 +104,8 @@ package es.unileon.prg.tema5;
          cabecera("04", "");
          String cadena = "Viaje al Parnaso";
         // Inicio modificacion
+	 System.out.println("La cadena acaba por Parsano: " + cadena.endsWith("Parnaso"));
+	 System.out.println("La cadena empieza por Viaje: " + cadena.startsWith("Viaje"));
         // Fin modificacion
       }
    
@@ -122,6 +124,7 @@ package es.unileon.prg.tema5;
          cabecera("05","");
          String cadena = "Viaje al Parnaso";
       // Inicio modificacion
+	 System.out.println("El caracter p se encuentra en la cadena: " + cadena.indexOf("p"));
         // Fin modificacion  
       }
    

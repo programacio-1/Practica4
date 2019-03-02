@@ -55,12 +55,15 @@ public class Apartado030102 extends Apartado {
 		cabecera("02", "Utilizacion de operadores logicos");
 
 		// Inicio modificacion
-		int edad;
-		int numeroPartes;
-		boolean deportivo;
-		boolean rebaja=true;
+		int edad = 45;
+		int numeroPartes = 2;
+		boolean deportivo=false;
+		boolean rebaja;
 		// rebaja = expresion booleana
-		System.out.println("Rebaja = " + rebaja);
+		if (((40<edad || edad<60) && numeroPartes<3)||(edad>20)&&(numeroPartes<=1)&&(deportivo=false)){
+			 rebaja=true;
+			 System.out.println("Rebaja = " + rebaja);
+		}
 		// Fin modificacion
 	}
 
