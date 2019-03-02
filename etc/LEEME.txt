@@ -2,7 +2,7 @@ Practica P-VAR
 
 Alumno: Sergio Casado Fernandez
 
-Horas dedicadas: 5h 30 min
+Horas dedicadas: 7h
 
 Problemas surgidos al realizar la practica:
 
