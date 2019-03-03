@@ -80,8 +80,10 @@ package es.unileon.prg.tema5;
       
          StringBuffer cadena=new StringBuffer("Viaje al Parnaso");
       // Modificaciones
-      
+      	 cadena=cadena.replace(cadena.indexOf("Parnaso"),cadena.length(),"Castalia");
          System.out.println(cadena.toString());
+	 cadena=cadena.replace(cadena.lastIndexOf("l"),cadena.lastIndexOf("l")+1,"");
+	 System.out.println(cadena.toString());
       }
    
    /**
@@ -96,7 +98,7 @@ package es.unileon.prg.tema5;
       
          StringBuffer cadena=new StringBuffer("Viaje al Parnaso");
       // Modificaciones
-      
+      	 cadena=cadena.reverse();
          System.out.println(cadena.toString());  
       }
    
@@ -113,7 +115,12 @@ package es.unileon.prg.tema5;
       
      	StringBuffer cadena=new StringBuffer("Viaje al Parnaso");
 		String otraCadena=new String("Viaje desde Arcadia");
-		//modificaciones
-      }
+	//modificaciones
+	StringBuffer cadenaResultadoBuffer=new StringBuffer();
+	String cadenaResultado = otraCadena.toLowerCase().substring(otraCadena.indexOf("V"),otraCadena.indexOf("e")+1);
+	cadenaResultadoBuffer=cadenaResultadoBuffer.append(cadenaResultado);
+	cadenaResultadoBuffer=cadenaResultadoBuffer.append(otraCadena.replace("Viaje","")+cadena.replace(cadena.indexOf("V"),otraCadena.indexOf("e")+1,""));
+	System.out.println(cadenaResultadoBuffer);      
+	}
    
    }
