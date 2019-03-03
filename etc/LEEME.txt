@@ -2,7 +2,7 @@ Practica P-VAR
 
 Alumno: Sergio Casado Fernandez
 
-Horas dedicadas: 5h 30 min
+Horas dedicadas: 7h
 
 Problemas surgidos al realizar la practica:
 
@@ -22,3 +22,6 @@ Apartado 030104 ejercicio 04.
 	Short no muestra el 32770 porque se sale del rango de valores que puede almacenar un Short.
 	Int no muestra el 2147483650 porque se sale del rango de valores que puee almacenar un Short.
 	Double muestra el numero sin variaciones.
+
+Apartado 030202 ejercicio 01.
+	String.length() muestra el numero de caracteres de la cadena mientras que String.capacity() muestra el numero de caracteres que reserva el string.

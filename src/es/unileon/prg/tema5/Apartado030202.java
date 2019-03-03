@@ -36,6 +36,12 @@ package es.unileon.prg.tema5;
          int año=1616;
       
       // Inicio modificacion
+	 cadena=cadena.append(logica);
+	 System.out.println(cadena);
+	 cadena=cadena.append(otraCadena);
+	 System.out.println(cadena);
+	 cadena=cadena.append(año);
+	 System.out.println(cadena);
         // Fin modificacion
       }
    
@@ -52,8 +58,11 @@ package es.unileon.prg.tema5;
          cabecera("02", "");
          StringBuffer cadena=new StringBuffer("Viaje al Parnaso");
       // Modificaciones
-      
+      	 String cadena2 = "mitico ";
+	 cadena=cadena.insert(9,cadena2);
          System.out.println(cadena.toString());
+	 cadena=cadena.replace(9,10,"M");
+	 System.out.println(cadena.toString());
       
       }
    

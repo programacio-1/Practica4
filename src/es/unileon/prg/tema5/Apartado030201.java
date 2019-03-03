@@ -124,7 +124,10 @@ package es.unileon.prg.tema5;
          cabecera("05","");
          String cadena = "Viaje al Parnaso";
       // Inicio modificacion
-	 System.out.println("El caracter p se encuentra en la cadena: " + cadena.indexOf("p"));
+	 System.out.println("El caracter p se encuentra en la posicion: " + cadena.indexOf("p"));
+	 System.out.println("La cadena Par se encuentra en la posicion: " + cadena.indexOf("Par"));
+	 System.out.println("La ultima ocurrencia de la letra a se encuentra en la posicion: " + cadena.lastIndexOf("a"));
+	 System.out.println("La letra a a partir de la posicion 3 esta en la posicion: " + cadena.indexOf("a",3));
         // Fin modificacion  
       }
    
@@ -142,6 +145,8 @@ package es.unileon.prg.tema5;
       
          String cadena = "Viaje al Parnaso";
       // Inicio modificacion
+	 System.out.println(cadena.replace("a","*"));
+	 System.out.println(cadena.replaceAll("Parnaso","Olimpo"));
       // Fin modificacion
       }
    
@@ -158,6 +163,16 @@ package es.unileon.prg.tema5;
          cabecera("07", "");
          String cadena = "Viaje al Parnaso";
       // Inicio modificacion
+	 int medio;
+	 int inicioJ;
+	 int finalS;
+
+	 medio = cadena.length()/2;
+	 inicioJ = cadena.indexOf("j");
+	 finalS = cadena.lastIndexOf("s");
+
+	 System.out.println(cadena.substring(medio));
+	 System.out.println(cadena.substring(inicioJ,finalS));
         // Fin modificacion
       }
    
@@ -172,6 +187,13 @@ package es.unileon.prg.tema5;
          cabecera("08", "");
          String cadena = " La Galatea   ";
       // Inicio modificacion
+	 int esp1;
+	 int esp2;
+
+	 esp1 = cadena.indexOf(" ");
+	 esp2 = cadena.lastIndexOf(" ");
+
+	 System.out.println(cadena.substring(esp1+1,esp2-2));
         // Fin modificacion
       }
    
@@ -188,6 +210,9 @@ package es.unileon.prg.tema5;
          boolean expresion = true;
          long enteroGrande = 1231231L;
       // Inicio modificacion
+	 System.out.println("Numero: " + String.valueOf(numero));
+	 System.out.println("Expresion: " + String.valueOf(expresion));
+	 System.out.println("Entero Grande: " + String.valueOf(enteroGrande));
       // Fin modificacion
       }
    
@@ -203,6 +228,9 @@ package es.unileon.prg.tema5;
          String cadena = "Viaje al Parnaso";
          String otraCadena = "Viaje al Olimpo";
       // Inicio modificacion
+	 System.out.println(cadena);
+	 System.out.println(otraCadena);
+	 System.out.println("La comparacion entre las dos cadenas es: " + cadena.compareTo(otraCadena));
         // Fin modificacion
       }
    }
